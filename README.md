@@ -14,9 +14,13 @@ Para começar o projeto eu separei todo o conteúdo que será trabalhado, e isso
 ## Definindo layout e desing
 Com o conteúdo do site praticamente definido, é necessário pensar no design e em como esse conteúdo será disponibilizado.
 
-O 1º passo é definir o wireframe do site, um layout genérico de como o conteúdo será localizado. Depois de alguns rabiscos no papel, o resultado foi esse: <imagem do wireframe>
+O 1º passo é definir o wireframe do site, um layout genérico de como o conteúdo será localizado. Depois de alguns rabiscos no papel, o resultado foi esse: 
+![indexWirefrime](prototipagem/wireframes/index.png)
+![musicPagesWireframe](prototipagem/wireframes/wireframe_pag_musica.png)
 
 O 2° passo e montar esse wireframe no figma (ferramenta de prototipagem), adicionando os detalhes do design, paletas de cores etc.
+![indexDesign](prototipagem/figma/index.png)
+![musicPageDesign](prototipagem/figma/Music page.png)
 
 ## Montando as páginas
 Sobre as tecnologias usadas para desenvolver o projeto, foram usados html para estruturar, css para estilização e Javascript para algumas pequenas interações. Na parte do css, foi usado muito flexbox para fazer estruturas de linhas e colunas.
