@@ -2,12 +2,33 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Meu álbum - página principal</title>
+    <title>Meu álbum - NoisyCell - Innocence</title>
 
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/musica.css">
 
     <script src="https://kit.fontawesome.com/fa019dc073.js" crossorigin="anonymous"></script>
+    <script>
+        function changeLanguage(lang){
+            let en = document.getElementById('en-flag')
+            let pt = document.getElementById('pt-flag')
+
+            en.classList.remove('selected')
+            pt.classList.remove('selected')
+
+            if (lang === 'en'){
+                en.classList.add('selected')
+
+                document.getElementById('pt-lyrics').style.display = 'none'
+                document.getElementById('en-lyrics').style.display = 'block'
+            } else {
+                pt.classList.add('selected')
+
+                document.getElementById('pt-lyrics').style.display = 'block'
+                document.getElementById('en-lyrics').style.display = 'none'
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -44,89 +65,171 @@
                 </div>
 
                 <div class="lyric-language-selector">
-                    <img src="../imagens/bandeira-brasil.png" alt="Bandeira do Brasil" class="language">
-                    <img src="../imagens/bandeira-eua.jpg" alt="Bandeira dos EUA" class="language">
-                    <img src="../imagens/bandeira_eua_brasil.png" alt="Bandeira dos EUA e do Brasil mescladas" class="language">
+                    <img src="../imagens/bandeira-brasil.png" alt="Bandeira do Brasil" class="language" id="pt-flag" onclick="changeLanguage('pt')">
+                    <img src="../imagens/bandeira-eua.jpg" alt="Bandeira dos EUA" class="language selected" id="en-flag" onclick="changeLanguage('en')">
                 </div> 
 
                 <div class="lyric-text">
-                    <div style="display: flex; flex-direction: row; justify-content: center;">
-                        <img src="../imagens/bandeira-eua.jpg" alt="Bandeira dos EUA" width="70px" style="margin-right: 15px;"> <h2 class="secondary-title">English Lyrics</h2>
+                    <div id="en-lyrics">
+                        <div class="lyric-title">
+                            <img src="../imagens/bandeira-eua.jpg" alt="Bandeira dos EUA" width="70px" style="margin-right: 15px;"> <h2 class="secondary-title">English Lyrics</h2>
+                        </div>
+                        <div class="lyrics">
+                            <p>
+                                It is five o'clock <br>
+                                The evening-glow tells me <br>
+                                A treasure of our memories <br>
+                                It's become empty somehow <br>
+                            </p>
+                            <p>
+                                You held out a small hand <br>
+                                Smiling like to you it was so natural <br>
+                                It may have no meaning <br>
+                                But it is something I cannot do <br>
+                            </p>
+                            <p>
+                                You touched my hand without thinking <br>
+                                But it was nice for me <br>
+                            </p>
+                            <p>
+                                All the time we believed <br>
+                                That the world was in your hands <br>
+                                We were wrong <br>
+                                Maybe it wasn't <br>
+                                I just wanna hope so when <br>
+                                I'm holding your hand <br>
+                            </p>
+                            <p>
+                                Would you hold my hand? <br>
+                                Could I have ever said that? <br>
+                                I can't remember (I can't remember) <br>
+                                Why is it unclear? <br>
+                                I guess I'm just not who I used to be <br>
+                            </p>
+                            <p>
+                                At times I cried and cried <br>
+                                And at times I smiled <br>
+                            </p>
+                            <p>
+                                All the time we could not believe <br>
+                                That the world was in our hands <br>
+                                We were wrong <br>
+                                In fact it was <br>
+                                Cause you're holding my hand now <br>
+                            </p>
+                            <p>
+                                We've always been a part of the world <br>
+                                And the world has never changed <br>
+                                How about you? how about me? <br>
+                                We just know that we have changed <br>
+                            </p>
+                            <p>
+                                All the time we believed <br>
+                                That the world was in your hands <br>
+                                We were wrong <br>
+                                Maybe it wasn't <br>
+                                Cause you're holding my hand now <br>
+                            </p>
+                            <p>
+                                We've always been a part of the world <br>
+                                And the world has never changed <br>
+                                How about you? how about me? <br>
+                                We just know that we have changed <br>
+                            </p>
+                            <p>
+                                Every moment <br>
+                                Everywhere <br>
+                                I can believe <br>
+                                I can believe <br>
+                                When I'm holding your warm hand <br>
+                                Your warm hand <br>
+                            </p>
+                            <p>
+                                At times I cried and cried <br>
+                                And at times I smiled <br>
+                            </p>
+                        </div>
                     </div>
-                    <div class="lyrics">
-                        <p>
-                            It is five o'clock <br>
-                            The evening-glow tells me <br>
-                            A treasure of our memories <br>
-                            It's become empty somehow <br>
-                        </p>
-                        <p>
-                            You held out a small hand <br>
-                            Smiling like to you it was so natural <br>
-                            It may have no meaning <br>
-                            But it is something I cannot do <br>
-                        </p>
-                        <p>
-                            You touched my hand without thinking <br>
-                            But it was nice for me <br>
-                        </p>
-                        <p>
-                            All the time we believed <br>
-                            That the world was in your hands <br>
-                            We were wrong <br>
-                            Maybe it wasn't <br>
-                            I just wanna hope so when <br>
-                            I'm holding your hand <br>
-                        </p>
-                        <p>
-                            Would you hold my hand? <br>
-                            Could I have ever said that? <br>
-                            I can't remember (I can't remember) <br>
-                            Why is it unclear? <br>
-                            I guess I'm just not who I used to be <br>
-                        </p>
-                        <p>
-                            At times I cried and cried <br>
-                            And at times I smiled <br>
-                        </p>
-                        <p>
-                            All the time we could not believe <br>
-                            That the world was in our hands <br>
-                            We were wrong <br>
-                            In fact it was <br>
-                            Cause you're holding my hand now <br>
-                        </p>
-                        <p>
-                            We've always been a part of the world <br>
-                            And the world has never changed <br>
-                            How about you? how about me? <br>
-                            We just know that we have changed <br>
-                        </p>
-                        <p>
-                            All the time we believed <br>
-                            That the world was in your hands <br>
-                            We were wrong <br>
-                            Maybe it wasn't <br>
-                            Cause you're holding my hand now <br>
-                        </p>
-                        <p>
-                            We've always been a part of the world <br>
-                            And the world has never changed <br>
-                            How about you? how about me? <br>
-                            We just know that we have changed <br>
-                        </p>
-                        <p>
-                            Every moment <br>
-                            Everywhere <br>
-                            I can believe <br>
-                            I can believe <br>
-                            When I'm holding your warm hand <br>
-                            Your warm hand <br>
-                        </p>
-                        <p>
-                            At times I cried and cried <br>
-                            And at times I smiled <br>
-                        </p>
+
+                    <div id="pt-lyrics" style="display: none">
+                        <div class="lyric-title">
+                            <img src="../imagens/bandeira-brasil.png" alt="Bandeira do Brasil" width="70px" style="margin-right: 15px;"> <h2 class="secondary-title">Legendas em português</h2>
+                        </div>
+                        <div class="lyrics">
+                            <p>
+                                São cinco horas <br>
+                                O brilho da noite me diz <br>
+                                Um tesouro de nossas memórias <br>
+                                Tornou-se vazio de alguma forma <br>
+                            </p>
+                            <p>
+                                Você estendeu uma mão pequena <br>
+                                Sorrindo como lhe era tão natural <br>
+                                Isso pode não ter significado <br>
+                                Mas é algo que eu não posso fazer <br>
+                            </p>
+                            <p>
+                                Você tocou minha mão sem pensar <br>
+                                Mas foi bom para mim <br>
+                            </p>
+                            <p>
+                                Todo o tempo nós acreditávamos <br>
+                                Que o mundo estava em nossas mãos <br>
+                                Nós estávamos errados <br>
+                                Talvez não tenha sido <br>
+                                Eu só quero acreditar que <br>
+                                Eu estou segurando a sua mão <br>
+                            </p>
+                            <p>
+                                Você seguraria a minha mão? <br>
+                                Como eu poderia ter dito isso? <br>
+                                Não me lembro (não me lembro) <br>
+                                Por que não está claro? <br>
+                                Eu acho que eu não sou mais quem eu costumava ser <br>
+                            </p>
+                            <p>
+                                Às vezes eu chorei e chorei <br>
+                                E às vezes eu sorri <br>
+                            </p>
+                            <p>
+                                Todo o tempo nós acreditávamos <br>
+                                Que o mundo estava em nossas mãos <br>
+                                Nós estávamos errados <br>
+                                De fato eu estava <br>
+                                Porque você está segurando a minha mão agora <br>
+                            </p>
+                            <p>
+                                Nós sempre fomos uma parte do mundo <br>
+                                E o mundo nunca mudou <br>
+                                E quanto a você? E quanto a mim? <br>
+                                Nós apenas sabemos que mudamos <br>
+                            </p>
+                            <p>
+                                Todo o tempo nós acreditávamos <br>
+                                Que o mundo estava nossas mãos <br>
+                                Nós estávamos errados <br>
+                                Talvez não tenha sido <br>
+                                Porque você está segurando minha mão agora <br>
+                            </p>
+                            <p>
+                                Nós sempre fomos uma parte do mundo <br>
+                                E o mundo nunca mudou <br>
+                                E quanto a você? E quanto a mim? <br>
+                                Nós apenas sabemos que mudamos <br>
+                            </p>
+                            <p>
+                                Cada momento <br>
+                                Em toda parte <br>
+                                Eu posso acreditar <br>
+                                Eu posso acreditar <br>
+                                Quando eu estou segurando a sua mão quente <br>
+                                Sua mão quente <br>
+                            </p>
+                            <p>
+                                Às vezes eu chorei e chorei <br>
+                                E às vezes eu sorri <br>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,55 +242,66 @@
                     </div>
                 </a>
 
-                <a href="../index.html" class="redirect-link">
+                <a href="music2.html" class="redirect-link">
                     <div class="other-song">
                         <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
                         <div style="margin-right: 15px;">
                             <span class="mini-title">The girl I haven’t met</span> <br>
                             <span class="secondary-info">Kudasai</span>
                         </div>
-                        <span class="secondary-info">3:15</span>
+                        <span class="secondary-info align-right">3:15</span>
                     </div>
                 </a>
 
-                <div class="other-song">
-                    <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
-                    <div style="margin-right: 15px;">
-                        <span class="mini-title">The girl I haven’t met</span> <br>
-                        <span class="secondary-info">Kudasai</span>
+                <a href="music3.html" class="redirect-link">
+                    <div class="other-song">
+                        <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
+                        <div style="margin-right: 15px;">
+                            <span class="mini-title">Descobridor dos sete mares</span> <br>
+                            <span class="secondary-info">Tim Maia</span>
+                        </div>
+                        <span class="secondary-info align-right">4:33</span>
                     </div>
-                    <span class="secondary-info">3:15</span>
-                </div>
+                </a>
 
-                <div class="other-song">
-                    <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
-                    <div style="margin-right: 15px;">
-                        <span class="mini-title">The girl I haven’t met</span> <br>
-                        <span class="secondary-info">Kudasai</span>
+                <a href="music4.html" class="redirect-link">
+                    <div class="other-song">
+                        <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
+                        <div style="margin-right: 15px;">
+                            <span class="mini-title">Harder, Better, Faster, Stronger</span> <br>
+                            <span class="secondary-info">Daft Punk</span>
+                        </div>
+                        <span class="secondary-info align-right">3:46</span>
                     </div>
-                    <span class="secondary-info">3:15</span>
-                </div>
+                </a>
 
-                <div class="other-song">
-                    <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
-                    <div style="margin-right: 15px;">
-                        <span class="mini-title">The girl I haven’t met</span> <br>
-                        <span class="secondary-info">Kudasai</span>
+                <a href="music5.html" class="redirect-link">
+                    <div class="other-song">
+                        <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
+                        <div style="margin-right: 15px;">
+                            <span class="mini-title">Maluco beleza</span> <br>
+                            <span class="secondary-info">Raul Seixas</span>
+                        </div>
+                        <span class="secondary-info align-right">2:53</span>
                     </div>
-                    <span class="secondary-info">3:15</span>
-                </div>
+                </a>
 
-                <div class="other-song">
-                    <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
-                    <div style="margin-right: 15px;">
-                        <span class="mini-title">The girl I haven’t met</span> <br>
-                        <span class="secondary-info">Kudasai</span>
+                <a href="music6.html" class="redirect-link">
+                    <div class="other-song">
+                        <i class="fa-solid fa-play" style="margin-right: 8px;"></i> 
+                        <div style="margin-right: 15px;">
+                            <span class="mini-title">Cry Baby</span> <br>
+                            <span class="secondary-info">Official HIGE DANdism</span>
+                        </div>
+                        <span class="secondary-info align-right">3:15</span>
                     </div>
-                    <span class="secondary-info">3:15</span>
-                </div>
+                </a>
             </div>
         </div>
-        <audio src="../audio/noisycell-innocence.mp3" class="main-audio-player" controls></audio>
+        <div class="margin-audio-content"></div>
+        <div class="fixed-audio-position">
+            <audio src="../audio/noisycell-innocence.mp3" class="main-audio-player" controls></audio>
+        </div>
     </div>
 </body>
 </html>

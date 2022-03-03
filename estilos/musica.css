@@ -36,7 +36,7 @@ body{
     color: #6B9957;
     font-size: 24px;
     font-weight: 800;
-    line-height: 15px;
+    line-height: 20px;
     margin-bottom: 12px;
 }
 
@@ -123,11 +123,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.other-song:hover, .back-to-home:hover{
-    cursor: pointer;
-    color: #6B9957 !important;
+    width: 100%;
 }
 
 .main-audio-player{
@@ -138,4 +134,36 @@ body{
 .redirect-link{
     width: 100%;
     text-decoration: none;
+}
+
+.redirect-link i{
+    color: black;
+}
+
+.redirect-link:hover{
+    cursor: pointer;
+}
+
+.redirect-link:hover i, .redirect-link:hover .mini-title, .redirect-link:hover .secondary-info{
+    color: #6B9957;
+}
+
+.align-right{
+    margin-left: auto;
+}
+
+.fixed-audio-position{
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}
+
+.margin-audio-content{
+    margin-top: 30px;
+}
+
+.lyric-title{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
 }
