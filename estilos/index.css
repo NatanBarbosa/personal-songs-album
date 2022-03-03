@@ -1,0 +1,126 @@
+h1, h2, h3{
+    line-height: 10px;
+}
+
+.introduction-box{
+    padding: 10px 15px;
+    background: transparent;
+    border: 3px solid #6B9957;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    min-width: 600px;
+    align-self: center;
+}
+
+.introduction-box h1{
+    font-size: 36px;
+    color: #6B9957;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.introduction-box-msg{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.music-cards-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.music-card{
+    padding: 0;
+    flex-basis: 30%;
+    max-width: 250px;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.padding-content{
+    padding: 20px;
+}
+
+.music-info, .music-preview{
+    margin-bottom: 35px;
+}
+
+.music-title{
+    font-size: 18px;
+    color: #6B9957;
+    font-weight: 700;
+    line-height: 15px;
+    margin: 0;
+}
+
+.artist-title, .preview-title{
+    font-size: 14px;
+    color: #6D6D6D;
+}
+
+.preview-title{
+    color: #6B9957;
+    font-weight: 600;
+}
+
+.btn-music{
+    background: transparent;
+    border: 1px solid #399399;
+    border-radius: 10px;
+    color: #399399;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.btn-music:hover{
+    background: #399399;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.music-footer a, .btn-music{
+    width: 100%;
+}
+
+.music-banner img{
+    width: 100%;
+}
+
+.music-banner{
+    display: flex;
+    flex-direction: column;
+}
+
+.music-banner img.square-image{
+    width: 58%;
+    align-self: center;
+}
+
+.control-preview{
+    width: 100%;
+}
+
+.banner-background-blue{
+    background: #72A4D7;
+}
+
+.banner-background-yellow{
+    background: #F1FE7B;
+}
+
+.banner-background-black{
+    background: #0E0B06;
+}
+
+.flex-break{
+    flex-basis: 100%;
+}

@@ -1,0 +1,141 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.song-info{
+    flex-basis: 30%;
+}
+
+.song-banner, .song-name, .my-experience, .lyric-info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.song-banner img{
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+    border: 6px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.music-title{
+    color: #6B9957;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 15px;
+    margin-bottom: 12px;
+}
+
+.secondary-info{
+    font-size: 18px;
+    color: #6D6D6D;
+}
+
+.secondary-title{
+    color: #399399;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-spotify, .btn-youtube{
+    background: transparent;
+    color: #1ED760;
+    border: 1px solid #1ED760;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.btn-spotify:hover, .btn-youtube:hover{
+    background: #1ED760;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn-youtube{
+    color: #FF0000;
+    border: 1px solid #FF0000;
+    margin-left: 20px;
+}
+
+.btn-youtube:hover:hover{
+    background: #FF0000;
+}
+
+.song-lyric{
+    flex-basis: 30%;
+}
+
+.language{
+    width: 100px;
+    height: 70px;
+    display: inline;
+}
+
+.language:hover, .language.selected{
+    cursor: pointer;
+    border: 3px solid red;
+    box-sizing: border-box;
+}
+
+.lyric-text{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.lyrics{
+    overflow-y: auto;
+    margin-top: 15px;
+    max-height: 500px;
+    font-size: 14px;
+}
+
+.mini-title{
+    font-size: 18px;
+    color: #6D6D6D;
+    font-weight: 700;
+}
+
+.other-song{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.other-song:hover, .back-to-home:hover{
+    cursor: pointer;
+    color: #6B9957 !important;
+}
+
+.main-audio-player{
+    width: 100%;
+    height: 50px;
+}
+
+.redirect-link{
+    width: 100%;
+    text-decoration: none;
+}
