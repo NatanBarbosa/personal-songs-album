@@ -19,7 +19,7 @@ O 1º passo é definir o wireframe do site, um layout genérico de como o conte�
 ![musicPagesWireframe](prototipagem/wireframes/wireframe_pag_musica.png)
 
 O 2° passo e montar esse wireframe no figma (ferramenta de prototipagem), adicionando os detalhes do design, paletas de cores etc.
-![indexDesign](prototipagem/figma/index.png)
+![indexDesign](prototipagem/figma/Index.png)
 ![musicPageDesign](prototipagem/figma/Music page.png)
 
 ## Montando as páginas
