@@ -1,6 +1,8 @@
 # Atividade de criação de álbum de música WEB 
 Atividade proposta pelo professor gabriel do instituto proa com o intuito de praticar habilidades de desenvolvimento web, frizar conceitos e desenvolver a criatividade.
 
+[Atividade hospedada no github pages](https://natanbarbosa.github.io/personal-songs-album/)
+
 ## Proposta
 > “Hoje a ideia é bem simples: crie um álbum de músicas que você goste, mas não só isso. Essas músicas precisam refletir aspectos das sua vida. 
 > 
