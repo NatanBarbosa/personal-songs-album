@@ -14,13 +14,13 @@ Atividade proposta pelo professor gabriel do instituto proa com o intuito de pra
 Para começar o projeto eu separei todo o conteúdo que será trabalhado, e isso se refere aos aspectos da minha vida que seriam trabalhados, às músicas que farão parte do álbum, as imagens, letras e um pequeno parágrafo comentando um pouco acerda da relação da música com a minha vida.
 
 ## Definindo layout e desing
-Com o conteúdo do site praticamente definido, é necessário pensar no design e em como esse conteúdo será disponibilizado.
+Com o conteúdo do site praticamente definido, é necessário pensar no design e em como esse conteúdo será disponibilizado. 
 
 O 1º passo é definir o wireframe do site, um layout genérico de como o conteúdo será localizado. Depois de alguns rabiscos no papel, o resultado foi esse: 
 ![indexWirefrime](prototipagem/wireframes/index.png)
 ![musicPagesWireframe](prototipagem/wireframes/wireframe_pag_musica.png)
 
-O 2° passo e montar esse wireframe no figma (ferramenta de prototipagem), adicionando os detalhes do design, paletas de cores etc.
+O 2° passo e montar esse wireframe no figma (ferramenta de prototipagem), adicionando os detalhes do design, paletas de cores etc. Nessa etapa também se foi pensado na responsividade do site, ou seja, como o conteúdo se comporatria em telas de tamanho menor
 ![indexDesign](prototipagem/figma/Index.png)
 ![musicPageDesign](prototipagem/figma/music_page.png)
 
